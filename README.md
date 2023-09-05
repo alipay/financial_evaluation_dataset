@@ -17,7 +17,7 @@ Fin-Eval涵盖了财富管理、保险、投资研究等多个金融领域，数
 - [License](#license)
 
 ## 任务介绍
-<p align="center"> <img src="resources/fineval_tasks_dark.png" style="width: 70%;" id="title-icon">       </p>
+<p align="center"> <img src="resources/fineval_tasks_dark.png" style="width: 90%;" id="title-icon">       </p>
 
 - 我们将评估数据集分为五大类，其中认知类任务主要考察模型对金融文本的理解和抽取能力，生成类任务主要考察模型总结和生成专业金融文本的能力，金融知识类任务主要考察模型是否具备全面的金融领域知识，以及能否通过专业能力考试，金融逻辑类任务主要考察模型是否具备完成复杂金融任务的推理和计算能力，安全合规类任务主要考察模型能否辨别金融领域的安全和合规问题。
 - 根据金融大模型在蚂蚁各业务中落地的经验，我们为五大类共28个子任务适配了相应的prompt模板，进而激发出金融大模型的最优效果。
