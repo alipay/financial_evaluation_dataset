@@ -116,9 +116,8 @@ example.ipynb是一个Fin-Eval评估示例，针对GPT3.5在证券从业考试�
 - [ ] 敬请期待
 
 ## License
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-
-Fin-Eval数据集遵循[MIT License](https://lbesson.mit-license.org/)。
+Fin-Eval数据集遵循[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 如果希望获得Fin-Eval全量数据集，请发送邮件至<Fin-eval@antgroup.com>申请授权 。
