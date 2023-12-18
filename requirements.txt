@@ -1,0 +1,8 @@
+transformers==4.32.0
+accelerate==0.20.3
+tiktoken
+einops
+transformers_stream_generator==0.0.4
+scipy
+auto-gptq
+optimum
