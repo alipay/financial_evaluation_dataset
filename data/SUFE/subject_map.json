@@ -1,0 +1,206 @@
+{
+    "accounting": {
+        "name": "accounting",
+        "ch": "会计学",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "advanced_financial_accounting": {
+        "name": "advanced_financial_accounting",
+        "ch": "高级财务会计",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "auditing": {
+        "name": "auditing",
+        "ch": "审计学",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "corporate_strategy_and_risk_management": {
+        "name": "corporate_strategy_and_risk_management",
+        "ch": "公司战略与风险管理",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "cost_accounting": {
+        "name": "cost_accounting",
+        "ch": "成本会计学",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "economic_law": {
+        "name": "economic_law",
+        "ch": "经济法",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "financial_management": {
+        "name": "financial_management",
+        "ch": "财务管理学",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "intermediate_financial_accounting": {
+        "name": "intermediate_financial_accounting",
+        "ch": "中级财务会计",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "management_accounting": {
+        "name": "management_accounting",
+        "ch": "管理会计学",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "tax_law": {
+        "name": "tax_law",
+        "ch": "税法",
+        "en": "Accounting",
+        "subject": "会计"
+    },
+    "banking_practitioner_qualification_certificate": {
+        "name": "banking_practitioner_qualification_certificate",
+        "ch": "银行从业资格证",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "certified_management_accountant": {
+        "name": "certified_management_accountant",
+        "ch": "管理会计师",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "certified_practising_accountant": {
+        "name": "certified_practising_accountant",
+        "ch": "注册会计师",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "china_actuary": {
+        "name": "china_actuary",
+        "ch": "中国精算师",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "fund_qualification_certificate": {
+        "name": "fund_qualification_certificate",
+        "ch": "基金从业资格证",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "futures_practitioner_qualification_certificate": {
+        "name": "futures_practitioner_qualification_certificate",
+        "ch": "期货从业资格证",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "securities_practitioner_qualification_certificate": {
+        "name": "securities_practitioner_qualification_certificate",
+        "ch": "证券从业资格证",
+        "en": "Certificate",
+        "subject": "证书"
+    },
+    "econometrics": {
+        "name": "econometrics",
+        "ch": "计量经济学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "international_economics": {
+        "name": "international_economics",
+        "ch": "国际经济学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "macroeconomics": {
+        "name": "macroeconomics",
+        "ch": "宏观经济学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "microeconomics": {
+        "name": "microeconomics",
+        "ch": "微观经济学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "political_economy": {
+        "name": "political_economy",
+        "ch": "政治经济学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "public_finance": {
+        "name": "public_finance",
+        "ch": "财政学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "statistics": {
+        "name": "statistics",
+        "ch": "统计学",
+        "en": "Economy",
+        "subject": "经济"
+    },
+    "central_banking": {
+        "name": "central_banking",
+        "ch": "中央银行学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "commercial_bank_finance": {
+        "name": "commercial_bank_finance",
+        "ch": "商业银行金融学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "corporate_finance": {
+        "name": "corporate_finance",
+        "ch": "公司金融学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "finance": {
+        "name": "finance",
+        "ch": "金融学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "financial_engineering": {
+        "name": "financial_engineering",
+        "ch": "金融工程学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "financial_markets": {
+        "name": "financial_markets",
+        "ch": "金融市场学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "insurance": {
+        "name": "insurance",
+        "ch": "保险学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "international_finance": {
+        "name": "international_finance",
+        "ch": "国际金融学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "investments": {
+        "name": "investments",
+        "ch": "投资学",
+        "en": "Finance",
+        "subject": "金融"
+    },
+    "monetary_finance": {
+        "name": "monetary_finance",
+        "ch": "货币金融学",
+        "en": "Finance",
+        "subject": "金融"
+    }
+}

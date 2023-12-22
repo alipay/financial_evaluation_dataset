@@ -2,9 +2,9 @@
 # All rights reserved.
 import pandas as pd
 import os
+import json
 
-
-def load_dataset(path, dataset_type):
+def load_dataset_Ant(path, dataset_type):
     dataset = []
     if dataset_type not in ["dev", "test", "full"]:
         raise ValueError("加载数据集类型错误，限定在dev、test、full中，当前赋值为 ：" + str(dataset_type))
@@ -388,8 +388,101 @@ D.{D}
                 details["answer"] = answer
                 dataset.append(details)
     return dataset
+
+
+def split_standard(domain_name):
+    targets = ["_dev", "_val", "_test"]
+    for item in targets:
+        if domain_name.endswith(item):
+            domain_name = domain_name.split(item)[0]
+    return domain_name
+
+def load_dataset_SUFE(path, dataset_type):
+    dataset = []
+
+    # dataset_type="dev" 对应上财版本的dev+val
+    # dataset_type="test" 对应上财版本的test
+    # dataset_type="full" 对应上财版本的dev+val+test
+    if dataset_type not in ["dev", "test", "full"]:
+        raise ValueError("加载数据集类型错误，限定在dev、test、full中，当前赋值为 ：" + str(dataset_type))
+
+    if not os.path.exists(os.path.join(path, "subject_map.json")):
+        raise ValueError("subject_map.json 不在 " + path + " 路径下")
+    f = open(os.path.join(path, "subject_map.json"), "r")
+    dicts = json.load(f)
+    f.close()
+
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in [f for f in filenames if f.endswith(".csv")]:
+            path = os.path.join(dirpath, filename)
+            domain_name = split_standard(filename.split(".")[0])
+            subject = dicts[domain_name]["subject"]
+            domain = dicts[domain_name]["ch"]
+            frame = pd.read_csv(path)
+            headers = frame.head(0)
+            headers = list(headers)
+            for i in range(len(frame)):
+                tid = "/"
+                context = "/"
+                question = "/"
+                A="/"
+                B="/"
+                C="/"
+                D="/"
+                E="/"
+                answer = "/"
+
+                if "id" in headers:
+                    id = frame["id"][i]
+                if "question" in headers:
+                    question = frame["question"][i]
+                if "A" in headers:
+                    A = frame["A"][i]
+                if "B" in headers:
+                    B = frame["B"][i]
+                if "C" in headers:
+                    C = frame["C"][i]
+                if "D" in headers:
+                    D = frame["D"][i]
+
+                if "answer" in headers:
+                    answer = frame["answer"][i]
+                    if answer != answer:
+                        answer = ""
+                else:
+                    answer = ""
+
+                # 判断加载数据集类型，其中
+                # dev集是披露answer的评测题
+                # test集是未披露answer的评测题
+                # full集是所有评测题
+                if dataset_type == "dev" and answer == "":
+                    continue
+                elif dataset_type == "test" and answer != "":
+                    continue
+                elif dataset_type == "full":
+                    pass
+
+                prompt_constructor = f"""以下是中国关于{domain}考试的单项选择题，请选出其中的正确答案。
+{question}
+A.{A}
+B.{B}
+C.{C}
+D.{D}
+答案："""
+                details = {}
+                details["id"] = int(id)
+                details["subject"] = subject
+                details["domain"] = domain
+                details["prompt"] = prompt_constructor
+                details["answer"] = answer
+                dataset.append(details)
+    return dataset
             
-        
+def load_dataset(path, dataset_type):
+    dataset = load_dataset_Ant(os.path.join(path, "Ant"), dataset_type)
+    dataset.extend(load_dataset_SUFE(os.path.join(path, "SUFE"), dataset_type))
+    return dataset
         
 
             
